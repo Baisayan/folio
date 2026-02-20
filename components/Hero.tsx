@@ -39,7 +39,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="py-12 mb-16">
+    <section className="py-12 mb-10">
       <div className="flex items-start gap-4 mb-8">
         <Image
           width={24}
@@ -72,19 +72,19 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="flex flex-wrap gap-4 mb-8">
+      <div className="flex gap-4 mb-6">
         <a
-          href="https://drive.google.com/drive/folders/1IS59Ov0PV2rX3T0EYdIJDGMetXd7X_Fy?usp=sharing"
+          href="https://drive.google.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-3 py-1 text-sm rounded-md border"
+          className="flex items-center gap-2 px-3 py-1 text-sm rounded-md border hover:border-ring/50 transition-colors"
         >
           <Download className="size-4 text-ring" />
           Download CV
         </a>
         <a
           href="mailto:bbbbaisayan@gmail.com"
-          className="flex items-center gap-2 px-3 py-1 text-sm rounded-md border"
+          className="flex items-center gap-2 px-3 py-1 text-sm rounded-md border hover:border-ring/50 transition-colors"
         >
           <div className="size-2 rounded-full bg-ring" />
           Open to work for your idea
