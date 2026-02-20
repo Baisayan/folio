@@ -22,7 +22,7 @@ const Header = () => {
     <header className="border-b backdrop-blur-sm sticky top-0 z-50">
       <div className="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <span className="size-2 rounded-full bg-emerald-500"></span>
+          <div className="size-2 rounded-full bg-emerald-500 animate-pulse" />
           <div className="text-sm text-primary-foreground">IN {time}</div>
         </div>
         <div className="text-sm text-primary-foreground flex items-center gap-2">

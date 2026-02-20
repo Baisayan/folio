@@ -179,7 +179,7 @@ const Projects = () => {
                           backgroundColor: "oklch(14.1% 0.005 285.823)",
                         }}
                       >
-                        <Icon className={`w-3.5 h-3.5 ${getIconColor(tag)}`} />
+                        <Icon className={`size-3.5 ${getIconColor(tag)}`} />
                         {tag}
                       </button>
                     );

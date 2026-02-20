@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Twitter,
   Github,
@@ -7,7 +5,6 @@ import {
   Instagram,
   Code,
   Download,
-  MapPin,
 } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
@@ -38,7 +35,7 @@ const Hero = () => {
       name: "Instagram",
       icon: Instagram,
       url: "https://instagram.com/baisayan",
-    }
+    },
   ];
 
   return (
@@ -54,14 +51,14 @@ const Hero = () => {
         <div className="space-y-2">
           <h1 className="text-3xl font-bold">Baisayan Bhattacharya</h1>
           <div className="text-muted-foreground flex items-center gap-2">
-            <MapPin className="size-6 text-emerald-500" /> Delhi, India
+            bbbbaisayan@gmail.com
           </div>
         </div>
       </div>
 
       <div className="space-y-4 text-sm text-muted-foreground mb-8">
         <p>
-          A Software Engineeer based in Delhi, India. I build production-ready
+          A Software Engineer based in Delhi, India. I build production-ready
           applications with modern technologies.
         </p>
         <p>
@@ -89,7 +86,7 @@ const Hero = () => {
           href="mailto:bbbbaisayan@gmail.com"
           className="flex items-center gap-2 px-3 py-1 text-sm rounded-md border"
         >
-          <span className="size-2 rounded-full bg-ring animate-pulse"></span>
+          <div className="size-2 rounded-full bg-ring" />
           Open to work for your idea
         </a>
       </div>
