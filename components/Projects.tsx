@@ -5,17 +5,8 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { Button } from "./ui/button";
 
-interface Project {
-  title: string;
-  description: string;
-  tags: string[];
-  link?: string;
-  github?: string;
-  image: string;
-}
-
 const Projects = () => {
-  const projects: Project[] = [
+  const projects = [
     {
       title: "CodeNakama",
       tags: [

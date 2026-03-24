@@ -1,10 +1,4 @@
-import {
-  Twitter,
-  Github,
-  Linkedin,
-  Code,
-  Download,
-} from "lucide-react";
+import { Twitter, Github, Linkedin, Code, Download } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 
@@ -29,7 +23,7 @@ const Hero = () => {
       name: "Leetcode",
       icon: Code,
       url: "https://leetcode.com/u/bSXEYnRKis/",
-    }
+    },
   ];
 
   return (
@@ -52,17 +46,18 @@ const Hero = () => {
 
       <div className="space-y-4 text-sm text-muted-foreground mb-8">
         <p>
-          A Software Engineer based in Delhi, India. I build production-ready
-          applications with modern technologies.
+          A Software Engineer based in Delhi, India. Pursuing Bachelors of
+          Technology in Information Technology.
         </p>
         <p>
-          What I do: Developing Frappe/ERPNext modules, Laravel applications,
-          and building full-stack solutions with React, Next.js, and modern
-          databases.
+          What I do: Building backend-heavy and AI-powered systems using modern
+          tech stacks, focusing on performance, security, and scalable
+          architecture.
         </p>
         <p>
-          Currently: Working at Nestorbird, integrating third-party services,
-          optimizing SQL queries, and implementing role-based access control.
+          Currently: Developing projects like CodeNakama, while strengthening
+          core CS fundamentals by building HTTP servers, Redis and Git from
+          scratch.
         </p>
       </div>
 
