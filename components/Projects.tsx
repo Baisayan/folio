@@ -1,19 +1,6 @@
 "use client";
 
-import {
-  ExternalLink,
-  Github,
-  Code2,
-  FileCode,
-  FileType,
-  Terminal,
-  Box,
-  Globe,
-  Server,
-  Database,
-  Code,
-} from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+import { Github } from "lucide-react";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "./ui/card";
 import { Button } from "./ui/button";
@@ -30,22 +17,36 @@ interface Project {
 const Projects = () => {
   const projects: Project[] = [
     {
-      title: "ChangeLens",
-      tags: ["GoLang", "Next.js", "PostgreSQL", "JWT", "REST APIs"],
+      title: "CodeNakama",
+      tags: [
+        "Inngest",
+        "NextJS",
+        "Prisma",
+        "Webhooks",
+        "Pinecone",
+        "Better Auth",
+      ],
       description:
-        "Backend system for appointment scheduling with user authentication, role-based access control (admin, service provider, user), and secure JWT-based REST APIs.",
-      image: "/appwrite.png",
-      link: "https://appointment-booking-next.vercel.app/",
-      github: "https://github.com/devlpr-nitish/appointment-booking-next",
+        "AI Code Review tool for GitHub PRs leveraging repo-wide indexing, context-aware RAG pipelines, webhook triggers, & Inngest jobs.",
+      image: "/codenakama.png",
+      link: "https://codenakama.baisayan.tech/",
+      github: "https://github.com/Baisayan/codenakama",
     },
     {
-      title: "CodeLibra",
-      tags: ["Next.js", "Node.js", "Express", "Go", "Tailwind CSS"],
+      title: "ChangeLens",
+      tags: [
+        "NextJS",
+        "Gemini",
+        "Multi-Agent",
+        "TypeScript",
+        "ReactJS",
+        "Vercel",
+      ],
       description:
-        "Platform for competitive programmers to track and compare coding profiles, solve contest-wise questions, set weekly goals, and view detailed analytics—all in a clean, structured interface.",
-      image: "/appwrite.png",
-      link: "https://codelibra.vercel.app/",
-      github: "https://github.com/devlpr-nitish/code-libra",
+        "Gemini 3-powered Code change impact analysis using multi-agent reasoning to detect downstream effects of change made.",
+      image: "/changelens.png",
+      link: "https://changelens.vercel.app/",
+      github: "https://github.com/Baisayan/changelens",
     },
   ];
 
@@ -65,11 +66,11 @@ const Projects = () => {
                 src={project.image}
                 alt={project.title}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                className="object-cover"
               />
             </CardHeader>
 
-            <CardContent className=" flex flex-col justify-between">
+            <CardContent className="flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="text-xl font-semibold">{project.title}</h3>
@@ -88,61 +89,9 @@ const Projects = () => {
                   )}
                 </div>
 
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                   {project.description}
                 </p>
-              </div>
-
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag) => {
-                  // Icon mapping
-                  const getIcon = (name: string): LucideIcon => {
-                    const iconMap: Record<string, LucideIcon> = {
-                      GoLang: Terminal,
-                      Go: Terminal,
-                      "Next.js": Globe,
-                      PostgreSQL: Database,
-                      JWT: Code2,
-                      "REST APIs": Server,
-                      React: Box,
-                      Express: Server,
-                      MongoDB: Database,
-                      JavaScript: FileCode,
-                      TypeScript: FileType,
-                    };
-                    return iconMap[name] || Code;
-                  };
-
-                  // Color mapping
-                  const getIconColor = (name: string): string => {
-                    const colorMap: Record<string, string> = {
-                      GoLang: "text-cyan-500",
-                      Go: "text-cyan-500",
-                      "Next.js": "text-white",
-                      PostgreSQL: "text-blue-400",
-                      JWT: "text-orange-500",
-                      "REST APIs": "text-green-400",
-                      React: "text-cyan-400",
-                      Express: "text-green-400",
-                      MongoDB: "text-green-600",
-                      JavaScript: "text-yellow-400",
-                      TypeScript: "text-blue-400",
-                    };
-                    return colorMap[name] || "text-gray-400";
-                  };
-
-                  const Icon = getIcon(tag);
-
-                  return (
-                    <button
-                      key={tag}
-                      className="text-xs px-3 py-1 rounded-md text-gray-300 border border-gray-700 hover:border-pink-500 transition-all flex items-center gap-1.5 cursor-default"
-                    >
-                      <Icon className={`size-3.5 ${getIconColor(tag)}`} />
-                      {tag}
-                    </button>
-                  );
-                })}
               </div>
             </CardContent>
           </Card>

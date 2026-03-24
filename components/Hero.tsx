@@ -2,7 +2,6 @@ import {
   Twitter,
   Github,
   Linkedin,
-  Instagram,
   Code,
   Download,
 } from "lucide-react";
@@ -30,12 +29,7 @@ const Hero = () => {
       name: "Leetcode",
       icon: Code,
       url: "https://leetcode.com/u/bSXEYnRKis/",
-    },
-    {
-      name: "Instagram",
-      icon: Instagram,
-      url: "https://instagram.com/baisayan",
-    },
+    }
   ];
 
   return (
@@ -91,7 +85,7 @@ const Hero = () => {
         </a>
       </div>
 
-      <div className="flex flex-wrap gap-3 mb-8">
+      <div className="flex flex-wrap gap-1 sm:gap-3 mb-8">
         {socials.map((social) => (
           <Button key={social.name} variant="ghost" size="sm" asChild>
             <a
