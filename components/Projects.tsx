@@ -34,7 +34,7 @@ const Projects = () => {
         "Vercel",
       ],
       description:
-        "Gemini 3-powered Code change impact analysis using multi-agent reasoning to detect downstream effects of change made.",
+        "Gemini 3-powered Code change impact analysis using multi-agent reasoning to detect downstream effects of code change made.",
       image: "/changelens.png",
       link: "https://changelens.vercel.app/",
       github: "https://github.com/Baisayan/changelens",
@@ -43,7 +43,7 @@ const Projects = () => {
 
   return (
     <section className="mb-16">
-      <h2 className="text-3xl font-bold mb-8">Projects</h2>
+      <h2 className="text-3xl text-center tracking-tighter font-bold mb-12">What I&apos;ve Built</h2>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 mb-12">
         {projects.map((project, index) => (
@@ -88,6 +88,7 @@ const Projects = () => {
           </Card>
         ))}
       </div>
+      <div className="w-full h-px bg-linear-to-r from-transparent via-emerald-500/50 to-transparent" />
     </section>
   );
 };

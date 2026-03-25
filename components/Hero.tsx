@@ -27,7 +27,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="py-12 mb-10">
+    <section className="py-12 mb-5">
       <div className="flex items-start gap-4 mb-8">
         <Image
           width={96}
@@ -96,7 +96,7 @@ const Hero = () => {
         ))}
       </div>
 
-      <div className="w-full h-px bg-linear-to-r from-transparent via-emerald-500/50 to-transparent"></div>
+      <div className="w-full h-px bg-linear-to-r from-transparent via-emerald-500/50 to-transparent" />
     </section>
   );
 };
