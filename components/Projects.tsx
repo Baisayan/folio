@@ -19,7 +19,6 @@ const Projects = () => {
       ],
       description:
         "AI Code Review tool for GitHub PRs leveraging repo-wide indexing, context-aware RAG pipelines, webhook triggers, & Inngest jobs.",
-      image: "/codenakama.png",
       link: "https://codenakama.baisayan.tech/",
       github: "https://github.com/Baisayan/codenakama",
     },
@@ -35,7 +34,6 @@ const Projects = () => {
       ],
       description:
         "Gemini 3-powered Code change impact analysis using multi-agent reasoning to detect downstream effects of code change made.",
-      image: "/changelens.png",
       link: "https://changelens.vercel.app/",
       github: "https://github.com/Baisayan/changelens",
     },
@@ -52,15 +50,6 @@ const Projects = () => {
             className="border p-0 overflow-hidden hover:border-ring/30 transition-all group cursor-pointer"
             onClick={() => project.link && window.open(project.link, "_blank")}
           >
-            <CardHeader className="p-0 relative aspect-video overflow-hidden">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover"
-              />
-            </CardHeader>
-
             <CardContent className="flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between mb-3">

@@ -1,4 +1,4 @@
-import { Twitter, Github, Linkedin, Code } from "lucide-react";
+import { Twitter, Github, Linkedin, Code, Mail } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 
@@ -24,6 +24,11 @@ const Hero = () => {
       icon: Code,
       url: "https://leetcode.com/u/bSXEYnRKis/",
     },
+    {
+      name: "Mail",
+      icon: Mail,
+      url: "mailto:bbbbaisayan@gmail.com",
+    },
   ];
 
   return (
@@ -38,24 +43,16 @@ const Hero = () => {
         />
         <div className="space-y-2">
           <h1 className="text-3xl font-bold">Baisayan Bhattacharya</h1>
-          <a
-            href="mailto:bbbbaisayan@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="text-muted-foreground flex items-center gap-2 hover:text-foreground transition-colors">
-              bbbbaisayan@gmail.com
-            </div>
-          </a>
+          <div className="text-muted-foreground">
+            IT @ GGV, Bilaspur
+          </div>
         </div>
       </div>
 
       <div className="space-y-4 text-sm text-muted-foreground mb-6">
         <p>
           A <span className="font-bold text-foreground">Software Engineer</span>{" "}
-          based in{" "}
-          <span className="font-bold text-foreground">Delhi, India.</span>{" "}
-          Pursuing{" "}
+          pursuing{" "}
           <span className="font-bold text-foreground">
             Bachelors of Technology
           </span>{" "}
@@ -76,21 +73,6 @@ const Hero = () => {
           <span className="font-bold text-foreground">
             scalable architecture.
           </span>
-        </p>
-        <p>
-          <span className="font-bold text-foreground">Currently:</span>{" "}
-          Developing projects like{" "}
-          <span className="font-bold text-foreground">CodeNakama,</span> while
-          strengthening{" "}
-          <span className="font-bold text-foreground">
-            core CS fundamentals
-          </span>{" "}
-          by{" "}
-          <span className="font-bold text-foreground">
-            building HTTP servers
-          </span>
-          , <span className="font-bold text-foreground">Redis</span> and{" "}
-          <span className="font-bold text-foreground">Git</span> from scratch.
         </p>
       </div>
 
