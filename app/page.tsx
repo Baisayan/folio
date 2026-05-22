@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -8,7 +7,6 @@ export default function Home() {
       <Header />
       <div className="max-w-3xl mx-auto px-6 py-10">
         <Hero />
-        <Projects />
       </div>
     </main>
   );

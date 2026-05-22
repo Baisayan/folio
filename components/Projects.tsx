@@ -1,8 +1,7 @@
 "use client";
 
 import { Github } from "lucide-react";
-import Image from "next/image";
-import { Card, CardContent, CardHeader } from "./ui/card";
+import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 
 const Projects = () => {
@@ -23,7 +22,7 @@ const Projects = () => {
       github: "https://github.com/Baisayan/codenakama",
     },
     {
-      title: "ChangeLens",
+      title: "BabyRedis",
       tags: [
         "NextJS",
         "Gemini",
@@ -34,8 +33,38 @@ const Projects = () => {
       ],
       description:
         "Gemini 3-powered Code change impact analysis using multi-agent reasoning to detect downstream effects of code change made.",
-      link: "https://changelens.vercel.app/",
-      github: "https://github.com/Baisayan/changelens",
+      link: "https://github.com/Baisayan/babyredis",
+      github: "https://github.com/Baisayan/babyredis",
+    },
+    {
+      title: "BabyRedis",
+      tags: [
+        "NextJS",
+        "Gemini",
+        "Multi-Agent",
+        "TypeScript",
+        "ReactJS",
+        "Vercel",
+      ],
+      description:
+        "Gemini 3-powered Code change impact analysis using multi-agent reasoning to detect downstream effects of code change made.",
+      link: "https://github.com/Baisayan/babyredis",
+      github: "https://github.com/Baisayan/babyredis",
+    },
+    {
+      title: "BabyRedis",
+      tags: [
+        "NextJS",
+        "Gemini",
+        "Multi-Agent",
+        "TypeScript",
+        "ReactJS",
+        "Vercel",
+      ],
+      description:
+        "Gemini 3-powered Code change impact analysis using multi-agent reasoning to detect downstream effects of code change made.",
+      link: "https://github.com/Baisayan/babyredis",
+      github: "https://github.com/Baisayan/babyredis",
     },
   ];
 
@@ -77,6 +106,7 @@ const Projects = () => {
           </Card>
         ))}
       </div>
+
       <div className="w-full h-px bg-linear-to-r from-transparent via-emerald-500/50 to-transparent" />
     </section>
   );
