@@ -1,8 +1,11 @@
-import { Twitter, Github, Linkedin, Code, Mail } from "lucide-react";
+import { Twitter, Github, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
+import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 
 const Hero = () => {
+  const skills = ["python", "cpp", "ai infra", "inference", "rag"];
+
   const socials = [
     {
       name: "GitHub",
@@ -40,15 +43,33 @@ const Hero = () => {
 
       <div className="flex flex-col items-center gap-2 mb-4">
         <h1 className="text-4xl font-bold">Baisayan Bhattacharya</h1>
-        <div className="text-muted-foreground">Sophomore, IT @ GGV</div>
+        <div className="text-muted-foreground">{"// Sophomore, IT @ GGV"}</div>
       </div>
 
-      <div className="space-y-4 text-sm text-muted-foreground mb-4">
+      <div className="space-y-2 text-sm text-muted-foreground mb-4 text-center">
         <p>
-          <span className="font-bold text-foreground">Software Engineer</span>{" "}
+          <span className="font-bold text-foreground">AI Systems Engineer</span>{" "}
           based in{" "}
           <span className="font-bold text-foreground">Delhi, India</span>
         </p>
+        <p>
+          Building <span className="font-bold text-foreground">AI agents</span>,
+          optimizing{" "}
+          <span className="font-bold text-foreground">inference</span> and{" "}
+          <span className="font-bold text-foreground">finetuning</span> models.
+        </p>
+      </div>
+
+      <div className="mb-4 flex flex-wrap justify-center gap-4">
+        {skills.map((skill) => (
+          <Badge
+            key={skill}
+            variant="outline"
+            className="rounded-sm border-ring/40 bg-ring/10 px-3 py-1 text-sm font-semibold text-ring"
+          >
+            {skill}
+          </Badge>
+        ))}
       </div>
 
       <div className="flex justify-center">

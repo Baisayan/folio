@@ -2,16 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Project", href: "/projects" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
+  { label: "home", href: "/" },
+  { label: "projects", href: "/projects" },
+  { label: "blog", href: "/blog" },
+  { label: "work", href: "/work" },
 ];
 
 const Header = () => {
   return (
     <header className="border-b backdrop-blur-sm sticky top-0 z-50">
-      <div className="mx-auto px-6 py-3 flex justify-between items-center">
+      <div className="max-w-5xl mx-auto px-6 py-3 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
           <Image
             width={30}
@@ -20,9 +20,9 @@ const Header = () => {
             alt="Baisayan"
             className="rounded-full shrink-0 object-cover border-2"
           />
-          <div className="font-bold">Baisayan</div>
+          <div className="text-lg font-bold">Baisayan</div>
         </Link>
-        <nav className="flex items-center gap-6 text-">
+        <nav className="flex items-center gap-8 text-">
           {navLinks.map((link) => (
             <Link
               key={link.href}
