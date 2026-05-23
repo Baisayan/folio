@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <Header />
-      <div className="mx-auto w-full max-w-4xl px-4 sm:px-6">
+      <div className="m-auto w-full max-w-4xl px-3">
         <Hero />
       </div>
     </main>

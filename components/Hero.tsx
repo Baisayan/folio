@@ -30,23 +30,26 @@ const Hero = () => {
   ];
 
   return (
-    <section className="mb-15 items-center flex flex-col">
-      <div className="flex justify-center mb-2">
-        <Image
-          width={200}
-          height={200}
-          src="/logo.png"
-          alt="Baisayan"
-          className="rounded-full shrink-0 object-cover border-2 border-ring"
-        />
+    <section className="items-center flex flex-col mb-15">
+      <div className="flex justify-center mb-2 sm:mb-4">
+        <div className="relative size-40 sm:size-52 shrink-0">
+          <Image
+            fill
+            src="/logo.png"
+            alt="Baisayan"
+            className="rounded-full object-cover border-2 border-ring"
+          />
+        </div>
       </div>
 
       <div className="flex flex-col items-center gap-2 mb-4">
-        <h1 className="text-4xl font-bold">Baisayan Bhattacharya</h1>
+        <h1 className="sm:text-5xl text-3xl font-bold">
+          Baisayan Bhattacharya
+        </h1>
         <div className="text-muted-foreground">{"// Sophomore, IT @ GGV"}</div>
       </div>
 
-      <div className="space-y-2 text-sm text-muted-foreground mb-4 text-center">
+      <div className="space-y-2 text-sm sm:text-base tracking-wide text-muted-foreground mb-4 text-center">
         <p>
           <span className="font-bold text-foreground">AI Systems Engineer</span>{" "}
           based in{" "}
@@ -60,34 +63,32 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="mb-4 flex flex-wrap justify-center gap-4">
+      <div className="mb-4 flex justify-center gap-3 sm:gap-4">
         {skills.map((skill) => (
           <Badge
             key={skill}
             variant="outline"
-            className="rounded-sm border-ring/40 bg-ring/10 px-3 py-1 text-sm font-semibold text-ring"
+            className="rounded-sm border-ring/40 bg-ring/10 px-2 py-1 text-xs sm:px-3 sm:text-sm text-ring"
           >
             {skill}
           </Badge>
         ))}
       </div>
 
-      <div className="flex justify-center">
-        <div className="flex justify-between max-w-xl gap-1 sm:gap-3 mb-8">
-          {socials.map((social) => (
-            <Button key={social.name} variant="ghost" size="lg" asChild>
-              <a
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2"
-              >
-                <social.icon className="size-4 text-ring" />
-                {social.name}
-              </a>
-            </Button>
-          ))}
-        </div>
+      <div className="flex justify-center gap-1.5 sm:gap-4">
+        {socials.map((social) => (
+          <Button key={social.name} variant="ghost" asChild>
+            <a
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              <social.icon className="size-4 text-ring" />
+              {social.name}
+            </a>
+          </Button>
+        ))}
       </div>
     </section>
   );

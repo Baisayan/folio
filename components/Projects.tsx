@@ -8,63 +8,31 @@ const Projects = () => {
   const projects = [
     {
       title: "CodeNakama",
-      tags: [
-        "Inngest",
-        "NextJS",
-        "Prisma",
-        "Webhooks",
-        "Pinecone",
-        "Better Auth",
-      ],
       description:
-        "AI Code Review tool for GitHub PRs leveraging repo-wide indexing, context-aware RAG pipelines, webhook triggers, & Inngest jobs.",
+        "AI Code Review tool for GitHub PRs with repo-wide indexing, RAG pipeline, & background jobs.",
       link: "https://codenakama.baisayan.tech/",
       github: "https://github.com/Baisayan/codenakama",
     },
     {
       title: "BabyRedis",
-      tags: [
-        "NextJS",
-        "Gemini",
-        "Multi-Agent",
-        "TypeScript",
-        "ReactJS",
-        "Vercel",
-      ],
       description:
-        "Gemini 3-powered Code change impact analysis using multi-agent reasoning to detect downstream effects of code change made.",
+        "Redis Implementation with AOF persistence, sorted sets, lists, hashes and pub/sub.",
       link: "https://github.com/Baisayan/babyredis",
       github: "https://github.com/Baisayan/babyredis",
     },
     {
-      title: "BabyRedis",
-      tags: [
-        "NextJS",
-        "Gemini",
-        "Multi-Agent",
-        "TypeScript",
-        "ReactJS",
-        "Vercel",
-      ],
+      title: "Vedalloc",
       description:
-        "Gemini 3-powered Code change impact analysis using multi-agent reasoning to detect downstream effects of code change made.",
-      link: "https://github.com/Baisayan/babyredis",
-      github: "https://github.com/Baisayan/babyredis",
+        "Experimenting with custom memory allocation strategies in C using sbrk and mmap.",
+      link: "https://github.com/Baisayan/vedalloc",
+      github: "https://github.com/Baisayan/vedalloc",
     },
     {
-      title: "BabyRedis",
-      tags: [
-        "NextJS",
-        "Gemini",
-        "Multi-Agent",
-        "TypeScript",
-        "ReactJS",
-        "Vercel",
-      ],
+      title: "Authy",
       description:
-        "Gemini 3-powered Code change impact analysis using multi-agent reasoning to detect downstream effects of code change made.",
-      link: "https://github.com/Baisayan/babyredis",
-      github: "https://github.com/Baisayan/babyredis",
+        "Authentication & Session management system with RBAC, 2FA, CSRF and XSS protection.",
+      link: "https://github.com/Baisayan/authy",
+      github: "https://github.com/Baisayan/authy",
     },
   ];
 

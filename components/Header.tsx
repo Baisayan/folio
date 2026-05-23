@@ -34,7 +34,7 @@ const Header = () => {
           <div className="text-lg font-bold">Baisayan</div>
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-8 sm:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -50,7 +50,7 @@ const Header = () => {
           type="button"
           variant="ghost"
           size="icon"
-          className="md:hidden"
+          className="sm:hidden"
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
           onClick={() => setIsOpen((current) => !current)}
@@ -59,7 +59,7 @@ const Header = () => {
         </Button>
 
         {isOpen && (
-          <nav className="absolute right-6 top-full mt-2 w-44 rounded-md border bg-background p-2 shadow-lg md:hidden">
+          <nav className="absolute right-6 top-full mt-2 w-44 rounded-md border bg-background p-2 shadow-lg sm:hidden">
             <div className="flex flex-col gap-1">
               {navLinks.map((link) => (
                 <Link
