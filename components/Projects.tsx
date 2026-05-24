@@ -37,8 +37,10 @@ const Projects = () => {
   ];
 
   return (
-    <section className="mb-16">
-      <h2 className="text-3xl text-center tracking-tighter font-bold mb-12">What I&apos;ve Built</h2>
+    <section>
+      <h2 className="text-3xl text-center tracking-tighter font-bold mb-12">
+        // projects.py
+      </h2>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 mb-12">
         {projects.map((project, index) => (

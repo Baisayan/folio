@@ -39,7 +39,7 @@ const Header = () => {
             <Link
               key={link.href}
               href={link.href}
-              className="font-bold tracking-wide text-muted-foreground transition-colors hover:text-foreground"
+              className="font-bold tracking-wide text-muted-foreground transition-all duration-300 hover:scale-115 hover:text-foreground"
             >
               {link.label}
             </Link>
@@ -50,7 +50,7 @@ const Header = () => {
           type="button"
           variant="ghost"
           size="icon"
-          className="sm:hidden"
+          className="sm:hidden hover:scale-110"
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
           onClick={() => setIsOpen((current) => !current)}

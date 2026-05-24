@@ -30,7 +30,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="items-center flex flex-col mb-15">
+    <section className="items-center flex flex-col">
       <div className="flex justify-center mb-2 sm:mb-4">
         <div className="relative size-40 sm:size-52 shrink-0">
           <Image
@@ -43,7 +43,7 @@ const Hero = () => {
       </div>
 
       <div className="flex flex-col items-center gap-2 mb-4">
-        <h1 className="sm:text-5xl text-3xl font-bold">
+        <h1 className="sm:text-4xl text-2xl font-bold">
           Baisayan Bhattacharya
         </h1>
         <div className="text-muted-foreground">{"// Sophomore, IT @ GGV"}</div>
@@ -68,21 +68,26 @@ const Hero = () => {
           <Badge
             key={skill}
             variant="outline"
-            className="rounded-sm border-ring/40 bg-ring/10 px-2 py-1 text-xs sm:px-3 sm:text-sm text-ring"
+            className="rounded-sm border-ring/40 bg-ring/10 px-2 py-1 text-xs sm:px-3 sm:text-sm text-ring hover:scale-110"
           >
             {skill}
           </Badge>
         ))}
       </div>
 
-      <div className="flex justify-center gap-1.5 sm:gap-4">
+      <div className="flex justify-center gap-0 sm:gap-3 mb-6">
         {socials.map((social) => (
-          <Button key={social.name} variant="ghost" asChild>
+          <Button
+            key={social.name}
+            variant="ghost"
+            asChild
+            className="hover:scale-110"
+          >
             <a
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2"
+              className="flex items-center gap-1 sm:gap-2"
             >
               <social.icon className="size-4 text-ring" />
               {social.name}
@@ -90,6 +95,8 @@ const Hero = () => {
           </Button>
         ))}
       </div>
+
+      <div className="w-full h-px bg-linear-to-r from-transparent via-emerald-500/50 to-transparent" />
     </section>
   );
 };
