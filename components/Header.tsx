@@ -21,15 +21,16 @@ const Header = () => {
       <div className="relative mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
         <Link
           href="/"
-          className="flex items-center gap-2"
+          className="flex items-center gap-2.5"
           onClick={() => setIsOpen(false)}
         >
           <Image
-            width={30}
-            height={30}
+            width={32}
+            height={32}
             src="/logo.png"
             alt="Baisayan"
-            className="shrink-0 rounded-full border-2 object-cover"
+            priority
+            className="shrink-0 rounded-full object-cover"
           />
           <div className="text-lg font-bold">Baisayan</div>
         </Link>
